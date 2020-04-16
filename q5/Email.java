@@ -29,7 +29,8 @@ class Email{
             return false;
         }
 
-        if (this.message != other.message) {
+        // if (this.message != other.message) {
+        if (!this.message.equals(other.message)) {
             return false;
         }
 
