@@ -14,9 +14,16 @@ public class Duplicated
     emails.add(new Email("title 6", "message 6"));
     emails.add(new Email("title 5", "message 5"));
     emails.add(new Email("title 8", "message 8"));
-
-    emails = removeDuplicatedEmail(emails);
+    
+    System.out.println("---input ---");
     Iterator<Email> emailIterator = emails.iterator();
+    while(emailIterator.hasNext()){
+         System.out.println(emailIterator.next());
+    }
+
+    System.out.println("---output ---");
+    emails = removeDuplicatedEmail(emails);
+    emailIterator = emails.iterator();
     while(emailIterator.hasNext()){
          System.out.println(emailIterator.next());
     }

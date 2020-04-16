@@ -1,8 +1,8 @@
 import java.util.*;
 
 class Email{
-    public String title;
-    public String message;
+    private String title;
+    private String message;
     
     public Email(String title, String message){
         this.title = title;
